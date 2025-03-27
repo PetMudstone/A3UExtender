@@ -56,6 +56,18 @@ class Templates
         description = "This is a new template, called the A3 AAF (NEW)!"; // If this isn't included, no description will show (unless inherited from the base class.)
     };
 
+    class PM_CSAT_Tropical_Cup : Vanilla_Base
+    {
+        basepath = QPATHTOFOLDER(Templates\Vanilla); //the path to the folder the template is located in, this translates to "\x\A3AE\addons\templates\Templates\Vanilla"
+        side = "Inv"; // Inv, Occ, Reb, Riv, Civ
+        flagTexture = "A3\Data_F\Flags\Flag_CSAT_CO.paa"; // Path to an icon to be displayed in the select menu.
+        name = "PM CSAT Tropical Cup"; // Name shown in the select menu.
+        file = "PM_AI_CSAT_Tropical_CUP"; // The template file name - .sqf, that gets appended automatically.
+        maps[] = {}; // If this template should be prioritized on any maps (case sensitive to worldName)
+        climate[] = {"tropical", "temperate"}; // climate that the template can be selected on.
+        description = "CSAT with tropical camouflage. Uses some CUP and homebrew equipment."; // If this isn't included, no description will show (unless inherited from the base class.)
+    };
+
     /*
         Here we are creating a completely new class that inherits from Vanilla_AAF_New.
 
